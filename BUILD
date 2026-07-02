@@ -46,7 +46,7 @@ cc_binary(
     ],
 
     data = [
-        "application.shader",
+        "shaders/application.shader",
         ":copy_dll",
     ],
 
@@ -54,6 +54,7 @@ cc_binary(
         ":glew",
         ":glfw",
         "@bazel_tools//tools/cpp/runfiles",
+        "@glm//:glm", 
     ],
 
     copts = [
